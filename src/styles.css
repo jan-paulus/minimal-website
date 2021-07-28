@@ -1,0 +1,85 @@
+:root {
+  --bg: #fff;
+  --color: #000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #222426;
+    --color: #fff;
+  }
+}
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+    helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+  color: var(--color);
+  background-color: var(--bg);
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+h1 {
+  display: block;
+  font-weight: 700;
+  font-size: 3em;
+  line-height: 1em;
+}
+
+h2 {
+  font-size: 1.88em;
+}
+
+p {
+  font-size: 1.25em;
+  line-height: 1.5em;
+}
+
+header,
+main {
+  max-width: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+main {
+  margin-bottom: 80px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+.sls {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 0;
+}
+
+.sl {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin-right: 16px;
+  color: var(--color);
+  transform: translateY(0);
+}
+
+.sl:hover {
+  transform: translateY(-4px);
+}
+
+.i {
+  display: inline-flex;
+  user-select: none;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+  max-height: 100%;
+}

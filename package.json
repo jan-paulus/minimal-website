@@ -1,0 +1,16 @@
+{
+  "name": "minimal-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "snowpack dev",
+    "build": "snowpack build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "snowpack": "^3.8.3",
+    "snowpack-plugin-minify-html": "^0.1.1"
+  }
+}
